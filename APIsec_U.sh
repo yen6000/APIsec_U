@@ -1,7 +1,6 @@
 #! /bin/sh
 sudo ls
 clear
-cat https://github.com/yen5004/APIsec_U/blob/main/ascii_art
 cat ascii_art
 echo ""
 echo ""
@@ -29,12 +28,12 @@ sudo apt -y install make
 sudo apt -y install firefox
 sudo apt -y install python3
 sudo apt -y install python3-pip
-echo "#############################"
+echo ""
 echo "#############################"
 echo "## Knock knock.. Enter..   ##"
-echo "## THE POSTMAN!!           ##" 
+echo "##     THE POSTMAN!!       ##" 
 echo "#############################"
-echo "#############################"
+
 sleep 4s
 cd $HOME/opt
 sudo wget https://dl.pstmn.io/download/latest/linux64 -O postman-linux-x64.tar.gz && sudo tar -xvzf postman-linux-x64.tar.gz -C $HOME/opt && sudo ln -s $HOME/opt/Postman/Postman /usr/bin/postman
@@ -86,6 +85,8 @@ echo "Bringing in the WASP!"
 cd $HOME/opt
 sudo apt -y install zaproxy
 #not in lib anymore
+#Depending on Linux flavor
+#One method may or may not work
 #attempting this way:
 cd $HOME/opt/zaproxy
 sudo wget https://github.com/zaproxy/zaproxy/releases/download/v2.12.0/ZAP_2_12_0_unix.sh
